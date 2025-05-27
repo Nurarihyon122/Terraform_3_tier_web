@@ -100,7 +100,7 @@ terraform destroy -auto-approve
 ```
 
 🧠 Author
-Your Name – Cloud/DevOps Enthusiast
+Your Name – Utsav Kumar 
 GitHub: @Nurarihyon122
 LinkedIn: https://www.linkedin.com/in/utsav-kumar-4a148b279
 
