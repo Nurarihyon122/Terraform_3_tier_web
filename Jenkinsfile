@@ -4,7 +4,7 @@ pipeline {
   environment {
     AWS_ACCESS_KEY_ID     = credentials('aws-access-key-id')
     AWS_SECRET_ACCESS_KEY = credentials('aws-secret-access-key')
-    PATH = "${env.WORKSPACE}:${env.PATH}" // Include current directory in PATH
+    PATH = "${env.WORKSPACE}:${env.PATH}" // Add workspace to path
   }
 
   stages {
@@ -12,7 +12,7 @@ pipeline {
       steps {
         sh '''
           curl -O https://releases.hashicorp.com/terraform/1.5.7/terraform_1.5.7_linux_amd64.zip
-          unzip terraform_1.5.7_linux_amd64.zip
+          unzip -o terraform_1.5.7_linux_amd64.zip
           chmod +x terraform
         '''
       }
@@ -37,3 +37,4 @@ pipeline {
     }
   }
 }
+
