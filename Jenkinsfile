@@ -4,7 +4,7 @@ pipeline {
   environment {
     AWS_ACCESS_KEY_ID     = credentials('aws-access-key-id')
     AWS_SECRET_ACCESS_KEY = credentials('aws-secret-access-key')
-    PATH = "${env.WORKSPACE}:${env.PATH}" // Add workspace to path
+    
   }
 
   stages {
