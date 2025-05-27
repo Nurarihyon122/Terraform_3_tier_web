@@ -77,7 +77,7 @@ Create a new Pipeline Job in Jenkins
 Point it to your GitHub repo
 
 Use the Jenkinsfile for pipeline definition
-Update the AWS credentials in Jenkinsfile
+Update the AWS credentials in Jenkinsfile Or Create Credentials as global in Jenkins and kind as Secret text and add your AWS access key.
 
 Run the pipeline
 
